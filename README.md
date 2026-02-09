@@ -89,8 +89,7 @@ VITE_API_BASE_URL=http://localhost:5000/api
 
 ## 📸 Screenshots
 
-![Dashboard Screenshot](./path/to/your/image.png)
-> *Note: Please replace the path above with the actual location of your dashboard screenshot.*
+<img width="1439" height="734" alt="Screenshot 2026-02-09 101920" src="https://github.com/user-attachments/assets/4b6a55cb-a36a-485c-8f70-7e54ad1a2a2f" />
 
 ## 📂 Project Structure
 
@@ -112,3 +111,4 @@ CSTech/
 ## 🛡️ License
 
 This project is licensed under the MIT License.
+
