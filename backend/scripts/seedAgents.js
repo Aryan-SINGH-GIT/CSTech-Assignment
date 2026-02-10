@@ -1,10 +1,14 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const Agent = require('./models/Agent');
+const path = require('path');
+const Agent = require('../models/Agent');
 const bcrypt = require('bcryptjs');
 
-dotenv.config();
+dotenv.config({ path: path.join(__dirname, '../.env') });
 
+
+const dns=require('dns')
+dns.setServers(['1.1.1.1','8.8.8.8'])
 
 const seedAgents = async () => {
     try {

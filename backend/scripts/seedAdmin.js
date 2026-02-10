@@ -1,10 +1,15 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const User = require('./models/User');
+const User = require('../models/User');
+const path = require('path');
 
-dotenv.config();
+// Load .env from backend directory, handling both direct script execution and runs from subdirectories
+const envPath = path.resolve(__dirname, '..', '.env');
+dotenv.config({ path: envPath });
 
 
+const dns = require("dns");
+dns.setServers(["1.1.1.1", "8.8.8.8"]);
 
 const seedAdmin = async () => {
     try {

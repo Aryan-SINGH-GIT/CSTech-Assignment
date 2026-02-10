@@ -1,11 +1,14 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const Agent = require('./models/Agent');
-const Task = require('./models/Task');
+const path = require('path');
+const Agent = require('../models/Agent');
+const Task = require('../models/Task');
+
+dotenv.config({ path: path.join(__dirname, '../.env') });
 
 
-dotenv.config();
-
+const dns=require('dns')
+dns.setServers(['1.1.1.1','8.8.8.8'])
 
 const getAgentTaskCounts = async () => {
     try {
